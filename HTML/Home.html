@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Friend Finder</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/Home.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../JS/Home.js"></script>
+    <script src="../JS/Logout.js"></script>
+  </head>
+
+  <body>
+    <header>
+            <h1>Friend Finder</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="./Profile.html">Profile</a></li>
+                    <li><a href="./Friend.html">Friend</a></li>
+                    <li><button class="button" id="logoutBtn" onclick="logout()">Logout</button></li>
+                </ul>
+            </nav>
+        </header>
+  
+    <main>
+      <div class="container">
+        <div class="notif-menu">
+          <button onclick="location.href='../HTML/Message.html'" class="msg">
+            <i class="fa fa-envelope"></i>
+          </button>
+          <button class="add" onclick="create_post()">
+            <i class="fa fa-plus"></i>
+          </button>
+          <button class="notif">
+            <i class="fa fa-bell"></i>
+          </button>
+        </div>
+        <div class="modal" id="myForm">
+          <form action="/action_page.php" class="form-container">
+            <h1>Write Something to Post</h1>
+            <label for="upload_gambar" id="upload_label">Choose File</label>
+            <input type="file" class="file-input" id="upload_gambar" accept="image/*" onchange="showPreview(event)">
+            <img id="preview">
+
+            <label for="caption"></label>
+            <textarea name="caption"></textarea>
+
+            <div class="form-btn">
+              <button type="submit" class="submit_btn">Post</button>
+              <button type="button" class="cancel_btn" onclick="closeForm()">Cancel</button>
+          </div>
+            
+          </form>
+        </div>
+      </div>
+    </main>
+
+      <footer>
+        <b>Hak cipta &copy; 2023 Friend Finder.</b>
+      </footer>
+  </body>
+</html>

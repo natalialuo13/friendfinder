@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Friend Finder App</title>
+    <link rel="stylesheet" href="../CSS/FAQ.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <h1>Friend Finder</h1>
+    
+    </header>
+    <div class="container-faq">
+
+        <div class="title">
+            <h1>Frequently asked <br> <span> questions</span> </h1>
+            <p>Do you need some help with something or do you have questions on some features?</p>
+        </div>
+
+
+        <div class="faqs-container">
+            <div class="faq active">
+                <h3 class="faq-title">
+                    What is the Firend Finder application?
+                </h3>
+                <p class="faq-text">
+                    Friend Finder is a web-based application that allows users to find friends based on interests and hobbies within Sam Ratulangi University.
+
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+
+            <div class="faq">
+                <h3 class="faq-title">
+                    What is Friend Finder free?
+                </h3>
+                <p class="faq-text">
+                    Yes, Friend Finder is available for free to download and use.
+
+        
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+
+            <div class="faq">
+                <h3 class="faq-title">
+                    Is Friend Finder safe to use?
+                </h3>
+                <p class="faq-text">
+                    We always strive to keep our users safe. We also always take measures to prevent fraud and activities that harm our users. However, as with any other app, users should remain vigilant and take appropriate safety measures when using Friend Finder.
+                </p>
+                <button class="faq-toggle">
+                    <i class="fas fa-chevron-right"></i>
+                    <i class="fas fa-chevron-down"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let popup = document.getElementById("popup")
+
+        function openPopup() {
+            popup.classList.add("open-popup")
+        }
+
+        function closePopup() {
+            popup.classList.remove("open-popup")
+        }
+    </script>
+
+    <footer>
+        <b>Hak cipta &copy; 2023 Friend Finder.</b>
+    </footer>
+
+    <script src="../JS/FAQ.js"></script>
+
+</body>
+</html>

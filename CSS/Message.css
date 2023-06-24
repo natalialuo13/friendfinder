@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", "Open Sans", sans-serif;
+    overflow: hidden;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    height: 70px;
+    background-color: #8758ffcf;
+    color: #fff;
+    font-size: 2rem;
+    font-weight: bold;
+
+
+}
+
+.container {
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+}
+
+.box-chat {
+    display: flex;
+    height: 92%;
+    width: 605px;
+    display: flex;
+    padding: 10px 20px;
+    flex-direction: column;
+}
+
+.box-chat .chat {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+}
+
+#my-chat,
+#new-chat {
+    display: flex;
+    justify-content: end;
+}
+
+.box-chat .chat img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    float: left;
+}
+
+.box-chat .friend {
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    background-color: #282828;
+    color: #e0dfdf;
+    padding: 5px 25px 5px 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+
+}
+
+.box-chat .me {
+    font-weight: 500;
+    background-color: #0a7720;
+    color: #e0dfdf;
+    padding: 5px 25px 5px 10px;
+    border-radius: 7px;
+    margin-top: 10px;
+    position: relative;
+}
+
+.chat-content span {
+    font-weight: 400;
+    line-height: 1.3rem;
+}
+
+.box-typing img {
+    width: 25px;
+    border-radius: 50%;
+
+}
+
+.box-typing button {
+    background-color: #fcfcfc;
+    border: none;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.box-typing {
+    position: fixed;
+    display: flex;
+    gap: 15px;
+    height: 40px;
+    border: 2px solid #000000;
+    padding: 5px 10px;
+    margin-bottom: 10px;
+    z-index: 99;
+    bottom: 0;
+}
+
+.box-typing input {
+    position: static;
+    width: 500px;
+}
+
+
+input[type="text"] {
+    padding: 5px 10px;
+    background-color: rgb(255, 255, 255);
+    border: 0;
+
+}
+
+.box-typing input::placeholder {
+    font-weight: 500;
+    color: #838383;
+}
